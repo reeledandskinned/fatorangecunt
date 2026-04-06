@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set } from "firebase/database";
 
@@ -16,12 +15,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-// THIS is the important part 👇
 export default async function handler(req, res) {
   try {
     const GNEWS_KEY = process.env.GNEWS_KEY;
 
     const url = `https://gnews.io/api/v4/search?q=Donald%20Trump%20death&lang=en&max=10&token=${GNEWS_KEY}`;
+    
     const response = await fetch(url);
     const data = await response.json();
 
