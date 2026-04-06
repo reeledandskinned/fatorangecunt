@@ -17,6 +17,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+export default async function handler(req, res)
+{try}
 // Your GNews API key
 const GNEWS_KEY = "89bfe130020545ca03db2f42412e46e9";
 
