@@ -1,0 +1,12 @@
+{
+  "people": {
+    "Donald_Trump": { "alive": true },
+    "donald_trump": { "alive": true },
+    "Trump": { "alive": true },
+    "trump": { "alive": true },
+    "D_Trump": { "alive": true },
+    "d_trump": { "alive": true },
+    "Donald_J__Trump": { "alive": true },
+    "Donald_John_Trump": { "alive": true }
+  }
+}
